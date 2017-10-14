@@ -16,7 +16,12 @@
         [ngStyle]="{'width': isFavorite ? '500px' : '250px'}">
       </app-quote>
     </div>
-    <div class="boring">
+    <!-- lec. 32: we are going to make use of the renderer to manipulate the styling of html elements in our component -->
+    <button
+      (click)="onShowBoring(boringBlock)" 
+      class="btn btn-default">Show Boring quotes
+    </button>
+    <div #boringBlock class="boring" style="display: none">
       <div id="very-boring">
         <app-quote></app-quote>
       </div>

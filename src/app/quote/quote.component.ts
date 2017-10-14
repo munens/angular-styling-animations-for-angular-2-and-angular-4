@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-quote',
@@ -10,7 +10,8 @@ export class QuoteComponent implements OnInit {
 
   isFavorite: false;
 
-  constructor() { }
+  // we import the renderer from angular/core and it is a helper clas that can be used to render things in our template:
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit() {
   }
