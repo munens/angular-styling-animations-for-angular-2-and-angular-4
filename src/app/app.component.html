@@ -1,10 +1,18 @@
 <div class="container">
   <div class="row">
-      <h1>
-        Welcome to {{title}}!
-      </h1>
+    <h1>
+      Welcome to {{title}}!
+    </h1>
+    <div class="interesting">
       <app-quote class="favorite"></app-quote>
-      <app-author></app-author>
+      <!-- app-author was placed here before lec. 26. It has been commented out to show the effectiveness of '/deep/' -->
+      <!-- <app-author></app-author> -->
+    </div>
+    <div class="boring">
+      <div id="very-boring">
+        <app-quote></app-quote>
+      </div>
+    </div>
   </div>
 </div>
 
