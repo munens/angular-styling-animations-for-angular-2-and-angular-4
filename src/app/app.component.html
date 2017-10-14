@@ -12,7 +12,8 @@
            properties of isFavorite. This will reapply or remove the styling to the component. -->
       <app-quote
         (click)="isFavorite = !isFavorite"
-        [ngClass]="{'favorite super-favorite': isFavorite}">
+        [ngClass]="{'favorite super-favorite': isFavorite}"
+        [ngStyle]="{'width': isFavorite ? '500px' : '250px'}">
       </app-quote>
     </div>
     <div class="boring">
