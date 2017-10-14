@@ -5,11 +5,13 @@ h1 {
 :host {
 	display: block;
 	border: 1px solid black;
-	padding: 20px;
+	padding: 10px;
 }
 
 /* if there is a class specified within the component we can add additional styling based on a condition. The condition here 
-	 is the class that we specify on the component itself in this case: 'favourite' */
-:host(.favorite) {
-	
+	 is the class that we specify on the component itself in this case: 'favorite' */
+/* Other classes can also be hosted here: */
+:host(.favorite[]) {
+	border: 1px solid red;
 }
+

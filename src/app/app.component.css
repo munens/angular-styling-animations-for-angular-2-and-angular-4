@@ -1,3 +1,8 @@
 h1 {
 	color: green;
 }
+
+/* it is also possible to use the component name as a css selector: - but it can only be used in the app-component.css file or in the global styles.css file. */
+app-quote {
+	width: 50%;
+}
