@@ -13,6 +13,7 @@ h1 {
 /* Other classes can also be chained to the function call: */
 :host(.favorite) {
 	border: 1px solid red;
+	cursor: pointer;
 }
 
 /* host-context() allows us to apply styling to our component based on the class of any element that is a perent. i.e. this could be an immediate parent, 

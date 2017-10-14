@@ -7,6 +7,13 @@
       <app-quote class="favorite"></app-quote>
       <!-- app-author was placed here before lec. 26. It has been commented out to show the effectiveness of '/deep/' -->
       <!-- <app-author></app-author> -->
+
+      <!-- lec 27: let us add to 2 classes to the component below based on a condition. onClick we can change the 
+           properties of isFavorite. This will reapply or remove the styling to the component. -->
+      <app-quote
+        (click)="isFavorite = !isFavorite"
+        [ngClass]="{'favorite super-favorite': isFavorite}">
+      </app-quote>
     </div>
     <div class="boring">
       <div id="very-boring">

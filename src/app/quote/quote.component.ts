@@ -8,6 +8,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class QuoteComponent implements OnInit {
 
+  isFavorite: false;
+
   constructor() { }
 
   ngOnInit() {
